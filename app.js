@@ -18,8 +18,14 @@ app.use(morgan("tiny"));
 
 /* ROUTES */
 app.get('/', (req, res, next) => {
-    res.send('Welecome to the Actors in Television App!')
+    res.send('Welcome to the Actors in Television App!')
 });
+
+
+// Actors ROUTES
+app.use('/actors', actorsController);
+
+
 
 // 404 PAGE
 app.get('*', (req, res, next) => {
@@ -27,8 +33,7 @@ app.get('*', (req, res, next) => {
 });
 
 
-// Actors ROUTES
-app.use('/actors', actorsController);
+
 
 
 
