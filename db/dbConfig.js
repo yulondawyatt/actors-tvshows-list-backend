@@ -8,7 +8,8 @@ const cn = {
     user: process.env.PG_USER,
 }
 
-const db = pgp(cn);
+
+const db = pgp(cn); // Connect to actors_tvshow_db
 
 
 module.exports = db;
