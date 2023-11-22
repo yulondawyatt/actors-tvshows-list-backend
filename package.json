@@ -10,7 +10,7 @@
     "db:seed": "psql -U postgres -f db/seed.sql"
   },
   "keywords": [],
-  "author": "Yulonda Joy Wyatt",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
